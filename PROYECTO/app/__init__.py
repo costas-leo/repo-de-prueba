@@ -1,6 +1,8 @@
-from configuracion import Config
+from flask import Flask
+from flask_mysqldb import MySQL
+from .configuracion import Config  # Importar la configuración
 
-mysqlPPp = MySQL()
+mysqlPPp = MySQL()  # Crear una instancia de MySQL
 
 def create_app():
     app = Flask(__name__)
